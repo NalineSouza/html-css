@@ -25,12 +25,8 @@
              font-size: 1.5em;
              font-weight: bold;
              padding: 10px;
-             background-color: lightgrey;
+             background-color:lightgray;
 
-        }
-
-        tr.zeb {
-            background-color: aqua;
         }
 
         thead, tfoot {
@@ -48,6 +44,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                TR, TD, TH
             TBODY
@@ -59,12 +56,12 @@
         <caption>População das Unidades Federativas       </caption>
         <thead>
              <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style=" width: 50px;">População</th>
              </tr>
         </thead>
         <tbody>
-            <tr class="zeb">
+            <tr>
                 <td>São Paulo</td>
                 <td class="num">54 919 049</td>
             </tr>
@@ -171,7 +168,7 @@
         </tbody>
         <tfoot>
             <tr>
-              <th>Total de Habitantes</th>
+              <th scope="row">Total de Habitantes</th>
               <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
